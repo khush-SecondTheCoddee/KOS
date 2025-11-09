@@ -17,7 +17,7 @@ To get started with Vell, you'll need to have Python and Django installed on you
 
 1.  **Clone the repository:**
     ```
-    git clone https://github.com/your-username/vell.git
+    git clone https://github.com/khush-SecondTheCoddee/KOS.git
     ```
 2.  **Install the dependencies:**
     ```
