@@ -1,0 +1,5 @@
+plugins { id 'com.android.application' }
+
+android { namespace 'com.kos.mesh'; compileSdk 35
+    defaultConfig { applicationId 'com.kos.mesh'; minSdk 26; targetSdk 35; versionCode 1; versionName '1.0' }
+}
