@@ -1,0 +1,20 @@
+plugins { id 'java' }
+
+group = 'com.kos'
+version = '1.0.0'
+
+
+sourceSets {
+    main { java { srcDirs = ['src/main/java', 'src/androidStub/java'] } }
+    test { java { srcDirs = ['src/test/java'] } }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+tasks.register('packetTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.kos.mesh.mesh.MeshPacketTest'
+}
+
+tasks.named('test') { dependsOn 'packetTest' }
