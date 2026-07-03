@@ -1,0 +1,1 @@
+package android.widget; public class EditText extends TextView { private String text=""; public EditText(Object c){super(c);} public void setHint(String h){} public void setHintTextColor(int c){} public void setSingleLine(boolean b){} public void setText(String s){text=s;} public CharSequence getText(){return text;} }

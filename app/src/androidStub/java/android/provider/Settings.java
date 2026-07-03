@@ -1,0 +1,1 @@
+package android.provider; import android.content.ContentResolver; public final class Settings { public static final class Secure { public static final String ANDROID_ID="android_id"; public static String getString(ContentResolver r,String n){return "stub-device";} } }

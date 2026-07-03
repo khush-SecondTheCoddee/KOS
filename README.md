@@ -11,8 +11,10 @@ KOS Mesh is a native Android prototype for resilient off-grid messaging. It comb
 ## Build
 
 ```bash
-gradle assembleDebug
+make build
 ```
+
+The default build compiles the app logic and Android-facing Java sources on the JVM using lightweight Android API stubs in `app/src/androidStub/java`. This keeps CI/build validation working even where the Android SDK or Google Maven plugin repository is unavailable. To produce an installable APK, swap the app module back to the Android Gradle Plugin in an Android SDK environment.
 
 ## Notes
 
